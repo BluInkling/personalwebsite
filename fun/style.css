@@ -1,0 +1,117 @@
+body{
+    background-color: black;
+    background-image:url(images/giphy.gif);
+    background-repeat:repeat; 
+}
+
+header{
+    background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+
+}
+
+.navbar{
+    display: flex;
+    color: black;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.title{
+    color: aliceblue;
+    font-size: 35px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#toptitle{
+    font-size: 35px;
+
+}
+
+.items:hover{
+    background-color: whitesmoke;
+    opacity: 0.5;
+}
+
+.logo:hover{
+    width: 110px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+
+}
+
+
+.homeimage2{
+    width: 550px;
+    padding: 50px;
+}
+
+.homeBOX{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    width: 500px;
+    padding: 20px;
+    background-color: black;
+    border:10px gold solid;
+    display: inline-block;
+    background-size: cover;
+}
+
+#homeTEXT{
+    font-size: 30px;
+
+
+}
+
+.imagebox{
+    color: rgb(201, 11, 11);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 30px;
+} 
+
+img{
+    height: 350px;
+}
+
+
+.animes{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border:10px gold solid;
+    margin: 10%;
+
+}
+
+.games{
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    border:10px gold solid;
+    margin: 10%;
+
+
+}
