@@ -1,11 +1,17 @@
 body{
     background-color: black;
-    background-image:url(images/giphy.gif);
-    background-repeat:repeat; 
+    background-image: url(images/p4.webp);
+        
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+        
+    background-size: cover;
+
 }
 
 header{
-    background-color: red;
+    background-color: rgb(255, 255, 139);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
 
@@ -33,10 +39,15 @@ a{
 }
 
 .title{
+
+
+    border-radius:4px;
     color: aliceblue;
     font-size: 35px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+
+
 
 }
 
@@ -78,7 +89,7 @@ a{
     width: 500px;
     padding: 20px;
     background-color: black;
-    border:10px gold solid;
+    border:10px rgb(52, 52, 161) solid;
     display: inline-block;
     background-size: cover;
 }
@@ -87,4 +98,32 @@ a{
     font-size: 30px;
 
 
+}
+
+@media(max-width:1030px){
+    header{
+        background-color: red;
+    }
+    p{
+        font-size:70%;
+    }
+    #toptitle{
+        font-size: 90%;
+    }
+
+    a{
+        font-size: 50%;
+
+    }
+    .logo{
+        width: 60px;
+        height: 60px;
+    }
+    .navbar{
+        justify-content: space-around;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
 }

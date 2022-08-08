@@ -76,3 +76,31 @@ a{
 #homeTEXT{
     font-size: 30px;
 }
+
+@media(max-width:1030px){
+    header{
+        background-color: red;
+    }
+    p{
+        font-size:70%;
+    }
+    #toptitle{
+        font-size: 90%;
+    }
+
+    a{
+        font-size: 50%;
+
+    }
+    .logo{
+        width: 60px;
+        height: 60px;
+    }
+    .navbar{
+        justify-content: space-around;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+}
