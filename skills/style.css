@@ -30,7 +30,7 @@ header{
 
 }
 
-a{
+.navbar a{
     text-decoration: none;
     text-align: center;
     color: black;
@@ -90,9 +90,25 @@ a{
 
 #homeTEXT{
     font-size: 30px;
-
-
 }
+
+.projectsbox{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    width: 500px;
+    padding: 20px;
+    background-color: black;
+    border:10px gold solid;
+    display: inline-block;
+    background-size: cover;
+}
+
+#projectstext{
+    font-size: 30px;
+}
+
+
 
 @media(max-width:1030px){
     header{

@@ -61,31 +61,6 @@ gamerbox.appendChild(newImage);
 }
 
 
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
-
-// Get the header
-var header = document.getElementsByClassName("navbar")
-console.log(header)
-
-// Get the offset position of the navbar
-var sticky = header[0].offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header[0].classList.add("sticky");
-  } else {
-    header[0].classList.remove("sticky");
-  }
-}
-
-
-
-
-
-
-
 
 
 
@@ -186,25 +161,25 @@ function topFunction() {
 
 
 
-
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+// When the user scrolls the page, execute scrolling
+window.onscroll = function() { scrolling() };
 
 // Get the header
-var header = document.getElementsByClassName("navbar")
-console.log(header)
+var header = document.getElementById("navbar");
 
 // Get the offset position of the navbar
-var sticky = header[0].offsetTop;
+var sticky = header.offsetTop;
 
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header[0].classList.add("sticky");
-  } else {
-    header[0].classList.remove("sticky");
-  }
+function scrolling() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
 }
+
+
 
 
 

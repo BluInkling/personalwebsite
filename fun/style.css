@@ -14,21 +14,38 @@ body{
 
 }
 
-header{
+/* header{
     background-color: red;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
 
-}
+}  */
 
-.navbar{
+#navbar{
     display: flex;
     color: black;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
 
-}
+} 
+
+/* #navbar{
+    padding: 5px;
+	display: flex;
+	justify-content: space-around;
+	font-size: 8px;
+	background: black;
+	color: white;
+	margin-top: -8px;
+	margin-right: -8px;
+	margin-left: -8px;
+	align-items: center;
+} */
+
 
 a{
     text-decoration: none;
@@ -128,18 +145,15 @@ flex-direction: column;
 
 }
 
-/* The sticky class is added to the header with JS when it reaches its scroll position */
+
+
 .sticky {
-    background-color: red;
-    position: fixed;
-    top: 0;
-    width: 100%
-  }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .home {
-    padding-top: 102px;
-  }
+position: sticky;
+top: 0;
+z-index:2;
+
+}
+
 
   #nicebutton {
     transition-duration: 0.4s;
