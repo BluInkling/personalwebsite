@@ -14,12 +14,12 @@ body{
 
 }
 
-/* header{
+header{
     background-color: red;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
-
-}  */
+    position: sticky; top: 0;
+}  
 
 #navbar{
     display: flex;
@@ -27,7 +27,7 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: red;
+    background: linear-gradient(to right, rgb(255, 15, 15), rgb(90, 90, 90));
     font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
 
@@ -175,7 +175,7 @@ z-index:2;
   #myBtn {
     /* display: none; Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
+    bottom: 30px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
@@ -183,9 +183,9 @@ z-index:2;
     background-color: red; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
+    padding: 20px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+    font-size: 23px; /* Increase font size */
   }
   
   #myBtn:hover {

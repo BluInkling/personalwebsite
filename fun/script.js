@@ -3,8 +3,8 @@ randbtn.id="nicebutton"
 randbtn.innerHTML="Press Me!"
 randbtn.onclick=display_random_image
 document.getElementById('gametitle').appendChild(randbtn)
-
-
+meimg= document.getElementById("mypic").src
+console.log(meimg)
 
 
 
@@ -52,11 +52,15 @@ var newImage = getRandomInt(0, preBuffer.length - 1);
 // remove the previous images
 var images = document.getElementsByTagName('img');
 for(var i=0; i < images.length; i++) {
-    images[i].parentNode.removeChild(images[i]);
+    // images[i].parentNode.removeChild(images[i]);
+    images[i].src="";
 }
 // display the image  
 const gamerbox=document.getElementById('gamebox')
 gamerbox.appendChild(newImage);
+let mebox=document.getElementById("mypic")
+console.log(mebox)
+mebox.src= meimg
 
 }
 
@@ -101,6 +105,8 @@ function display_random_image2()
         src: "images/anime/rimuru.png",    },{
         src: "images/anime/stonk.png",    },{
         src: "images/anime/heh.png",    },{
+        src: "images/anime/mery.png",    },{
+        src: "images/anime/himeno.png",    },{
         src: "images/anime/yosh.png",    }];
     
     var preBuffer = [];
@@ -125,13 +131,16 @@ newImage.id="delthisA"
 // remove the previous images
 var images = document.getElementsByTagName('img');
 for(var i=0; i < images.length; i++) {
-    images[i].parentNode.removeChild(images[i]);
+    images[i].src="";
 }
 
 // display the image  
 const animebox=document.getElementById('animebox')
 
 animebox.appendChild(newImage);
+let mebox=document.getElementById("mypic")
+console.log(mebox)
+mebox.src= meimg
 
 }
 

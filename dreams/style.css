@@ -15,11 +15,21 @@ body{
 }
 
 header{
-    background-color: rgb(252, 35, 35);
+    position: sticky; top: 0;
+
+    background: linear-gradient(to right, rgb(255, 15, 215), rgb(27, 255, 65));
     font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
 
 }
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index:2;
+  
+  }
+
 
 .navbar{
     display: flex;
@@ -30,10 +40,10 @@ header{
 
 }
 
-a{
+.navbar a{
     text-decoration: none;
     text-align: center;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .title{
@@ -94,6 +104,42 @@ a{
     display: inline-block;
     background-size: cover;
 }
+
+.homeBOX2 a{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(9, 255, 0);
+}
+
+
+/* class is . */
+.green{ 
+    color: rgb(9, 255, 0);
+}
+
+.pink{
+    color: rgb(255, 0, 212);
+}
+
+
+.homeBOX3{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    width: 800px;
+    padding: 20px;
+    background-color: black;
+    border:10px rgb(145, 145, 145) solid;
+    display: inline-block;
+    background-size: cover;
+}
+
+.homeBOX3 a{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(255, 0, 140);
+}
+
 
 #homeTEXT{
     font-size: 30px;
